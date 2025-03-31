@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Counting Cards</title>
+	<link rel="stylesheet" href="./static/css/style.css">
+	<script src="./static/js/script.js"></script>
+</head>
+
+<body>
+	<form action="" id="startForm">
+		<h1 style="text-align: center;">Welcome to the Counting Cards Trainer</h1>
+		<div id="inputs">
+			<div>
+				<label for="speed">Playing cards speed (ms)</label>
+				<input type="number" id="speed" name="speed" value="1000">
+			</div>
+			<div>
+				<label for="number">Playing cards number</label>
+				<input type="number" id="number" name="number">
+			</div>
+		</div>
+		<button type="submit">Start</button>
+	</form>
+	<main id="game">
+		<div id="labels">
+			<h3>Cards left: <i id="cardsLeft"></i></h3>
+			<h3>Speed: <i id="speedLabel"></i>ms</h3>
+		</div>
+		<span id="countDown"></span>
+		<img src="" alt="" id="cardContainer">
+		<button id="pauseBtn" disabled>Pause</button>
+	</main>
+	<form id="result">
+		<div id="inputs">
+			<div>
+				<label for="response">What is the count?</label>
+				<input type="number" id="finalCount" name="finalCount">
+			</div>
+		</div>
+		<button type="submit">Submit</button>
+	</form>
+</body>
+
+</html>
